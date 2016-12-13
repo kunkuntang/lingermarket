@@ -1,0 +1,21 @@
+
+.banner{
+    height: 600px;
+    background: #f0ad4e;
+}
+
+.section{
+    height: 400px;
+    background-color: #1b6d85;
+}
+
+.section .pic{
+    margin-top: 100px;
+    height: 200px;
+    background-color: #3e8f3e;
+}
+
+.detail{
+    font-size: 22px;
+    line-height:400px;
+}

@@ -1,0 +1,29 @@
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.navbar{
+    margin: 0;
+}
+
+.company-introduce{
+    height: 600px;
+    background-color: #000;
+    text-align: center;
+    position: relative;
+}
+
+.company-introduce .title{
+    margin-top: 400px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.company-introduce .introdution{
+    height: 400px;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+    color: #fff;
+}
