@@ -1,21 +1,94 @@
-
-.banner{
-    height: 600px;
-    background: #f0ad4e;
+body{
+	background-color: #111111;
 }
 
-.section{
-    height: 400px;
-    background-color: #1b6d85;
+.navbar-default{	
+	background-color: transparent;
+	border-color: transparent;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar-wrapper .navbar.navbar-scroll{
+	border-bottom: 1px solid #e7eaec;
+}
+
+.navbar-default .navbar-brand{
+	color: #F2F2F2;
+	border-top: 5px solid transparent;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{
+	color: #fff;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+	border-top: 5px solid #2b72e0;
+	background-color: transparent;
+	color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a{
+	color: #fff;
+	font-family: "Microsoft YaHei";
+	font-size: 16px;
+	border-top: 5px solid transparent;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+	color: #2b72e0;
+}
+
+.navbar-default.navbar-scroll{
+	background-color: #272727;
+	border-color: #272727;
+}
+
+.navbar-scroll.navbar-default .nav li a:hover{
+	color: #2b72e0;
+}
+
+.banner{
+    color: #fff;
+}
+
+.bannerPic{
+	background: url('/img/bg.jpg') center no-repeat;
+	background-size: cover;
+    height: 600px;
+    position: relative;
+}
+
+.banner-text{
+	padding-top: 500px;
+	font-size: 22px;
+}
+
+.pro-introduce{
+	
+}
+
+.pro-pic{
+	display: inline-block;
 }
 
 .section .pic{
-    margin-top: 100px;
-    height: 200px;
-    background-color: #3e8f3e;
+
+}
+
+.title{
+    font-size: 22px;
+    color: #fff;
+    margin-top: 80px;
+    margin-bottom: 30px;
 }
 
 .detail{
-    font-size: 22px;
-    line-height:400px;
+	margin: 5px 0 10px 0;
+	color: #fff;
+}
+
+.com-introduce{
+	color: #A5A5A5;
 }

@@ -1,0 +1,24 @@
+{
+  "name": "linger",
+  "description": "linger org website",
+  "main": "app.js",
+  "authors": [
+    "kuntang"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "linger"
+  ],
+  "homepage": "index",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "classie": "^1.0.1"
+  }
+}
