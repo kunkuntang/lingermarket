@@ -54,15 +54,17 @@ body{
 }
 
 .bannerPic{
-	background: url('/img/bg.jpg') center no-repeat;
+	background: url('/img/banner2.jpg') center no-repeat;
 	background-size: cover;
-    height: 600px;
+    height: 500px;
     position: relative;
 }
 
 .banner-text{
-	padding-top: 500px;
-	font-size: 22px;
+	font-size: 30px;
+	position: absolute;
+	top: 40%;
+	left: 5%;
 }
 
 .pro-introduce{

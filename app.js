@@ -9,7 +9,7 @@ var path = require('path');
 
 //var serveStatic = require('serve-static');
 var bodyParser = require('body-parser');
-var port = process.env.PORT || 80;
+var port = process.env.PORT || 8080;
 var app = express();
 
 app.set('views', './pages/views');
@@ -20,6 +20,10 @@ app.use(express.static(path.join(__dirname, 'bower_components')));
 app.use('/img', express.static(path.join(__dirname, 'pages/img')));
 app.use('/css', express.static(path.join(__dirname, 'pages/css')));
 app.use('/js', express.static(path.join(__dirname, 'pages/js')));
+
+// app.get('/favicon.ico', function(req, res) {
+//     res.send('')
+// })
 
 app.listen(port);
 
