@@ -54,7 +54,7 @@ body{
 }
 
 .bannerPic{
-	background: url('/img/banner2.jpg') center no-repeat;
+	background: url('/img/banner.jpg') center no-repeat;
 	background-size: cover;
     height: 500px;
     position: relative;
