@@ -2,51 +2,60 @@ body{
 	background-color: #f3f3f3;
 }
 
-.navbar-default{	
-	background-color: transparent;
-	border-color: transparent;
-	-webkit-transition: all 0.3s ease-in-out 0s;
-	-o-transition: all 0.3s ease-in-out 0s;
-	transition: all 0.3s ease-in-out 0s;
-}
+@media (min-width: 768px) {
+		
+	.navbar-default{	
+		background-color: transparent;
+		border-color: transparent;
+		-webkit-transition: all 0.3s ease-in-out 0s;
+		-o-transition: all 0.3s ease-in-out 0s;
+		transition: all 0.3s ease-in-out 0s;
+	}
 
-.navbar-wrapper .navbar.navbar-scroll{
-	border-bottom: 1px solid #e7eaec;
-}
+	.navbar-wrapper .navbar.navbar-scroll{
+		border-bottom: 1px solid #e7eaec;
+	}
 
-.navbar-default .navbar-brand{
-	color: #F2F2F2;
-	border-top: 5px solid transparent;
-}
+	.navbar-default .navbar-brand{
+		color: #F2F2F2;
+		border-top: 5px solid transparent;
+	}
 
-.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{
-	color: #fff;
-}
+	.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{
+		color: #fff;
+	}
 
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
-	border-top: 5px solid #2b72e0;
-	background-color: transparent;
-	color: #fff;
-}
+	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+		border-top: 5px solid #2b72e0;
+		background-color: transparent;
+		color: #fff;
+	}
 
-.navbar-default .navbar-nav>li>a{
-	color: #fff;
-	font-family: "Microsoft YaHei";
-	font-size: 16px;
-	border-top: 5px solid transparent;
-}
+	.navbar-default .navbar-nav>li>a{
+		color: #fff;
+		font-family: "Microsoft YaHei";
+		font-size: 16px;
+		border-top: 5px solid transparent;
+	}
 
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
-	color: #2b72e0;
-}
+	.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+		color: #2b72e0;
+	}
 
-.navbar-default.navbar-scroll{
-	background-color: #272727;
-	border-color: #272727;
-}
+	.navbar-default.navbar-scroll{
+		background-color: #272727;
+		border-color: #272727;
+	}
 
-.navbar-scroll.navbar-default .nav li a:hover{
-	color: #2b72e0;
+	.navbar-scroll.navbar-default .nav li a:hover{
+		color: #2b72e0;
+	}
+
+	.title{
+		padding-top: 80px;
+		padding-bottom: 30px;
+	}
+
 }
 
 .banner{
@@ -65,10 +74,6 @@ body{
 	position: absolute;
 	top: 40%;
 	left: 5%;
-}
-
-.pro-introduce{
-	
 }
 
 .pro-pic{
@@ -96,18 +101,38 @@ body{
 }
 
 .handler {
-	background: url('../img/handler.jpg') center no-repeat;
+	background: url('../img/handler.jpg') center -375px no-repeat;
 	background-size: cover;
 	position: relative;
+}
+
+.door-closing-machine {
+	background: url('../img/pro2.jpg') center no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.product {
+	cursor: pointer;
+	border: 1px solid #e2e2e2;
+	border-radius: 3px;
+	margin-top: 15px;
+	background-color: #efefef;
+	box-shadow: 0px 1px 4px 1px #eaeaea;	
+	transition: box-shadow .3s ease-out;
+}
+
+.product:hover {
+	box-shadow: 0px 1px 4px 1px #cccccc;
 }
 
 .title{
     font-size: 22px;
     color: #fff;
     margin-top: 30px;
-    margin-bottom: 30px;
-    padding-top: 80px;
-    padding-bottom: 30px;
+	margin-bottom: 30px;
+	padding-top: 24px;
+	padding-bottom: 8px;
 }
 
 .detail{

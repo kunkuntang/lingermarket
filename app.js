@@ -8,6 +8,7 @@ var path = require('path');
 //var _ = require('underscore');
 
 //var serveStatic = require('serve-static');
+var favicon = require('serve-favicon');
 var bodyParser = require('body-parser');
 var port = process.env.PORT || 8080;
 var app = express();
@@ -25,6 +26,8 @@ app.use('/js', express.static(path.join(__dirname, 'pages/js')));
 //     res.send('')
 // })
 
+app.use(favicon(path.join(__dirname, 'pages/views', 'favicon.ico')))
+
 app.listen(port);
 
 console.log('imooc started on port ' + port);
@@ -32,7 +35,7 @@ console.log('imooc started on port ' + port);
 //index page
 app.get('/:page', function (req, res) {
     var page = req.params.page;
-    console.log('page' + page)
+    console.log('page: ' + page)
     res.render(page, {
         page: page
     });

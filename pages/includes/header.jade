@@ -1,15 +1,15 @@
 nav.navbar.navbar-default.navbar-fixed-top.le-nav(role="navigation")
   .container-fluid
     .navbar-header
-      button.navbar-toggle.collapsed(data-toggle="collapse", data-target="linger-nav" type="button")
+      button.navbar-toggle.collapsed(data-toggle="collapse", data-target="#linger-nav", type="button", aria-expanded="true")
         span.sr-only Movie
         span.icon-bar
         span.icon-bar
         span.icon-bar
       a.navbar-brand(href="#") Linger
     .collapse.navbar-collapse(id="linger-nav")
-      ul.nav.navbar-nav
-        li.active
+      ul.nav.navbar-nav(id="navBar")
+        li
           a(href="/") 首页
         li
           a(href="/about") 产品介绍
