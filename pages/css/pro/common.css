@@ -2,8 +2,12 @@
     margin-top: 51px;
 }
 
-.section img {
+.section1 img {
     height: 235px;
+}    
+
+.section1 img {
+    margin: 0 auto;
 }
 
 .section small {
@@ -16,5 +20,48 @@
 
 .section table{
     margin-bottom: 20px;
+}
+
+.handle_banner {
+    margin-top: 51px;
+    height: 300px;
+    width: 100%;
+    background: url('/img/production/doorHandle.jpg') center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.handle_banner .bannerBg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0, .3)
+}
+
+.handle_banner .banner_text{
+    width: 100%;
+    height: 50px;
+    font-size: 32px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+}
+
+.handle_container {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.section .handle {
+    border-top: 1px solid #c3c3c3;
+    margin: 20px 0;
+    padding-top: 10px;
+}
+
+.section1 .handle img{
+    height: 150px;
 }
 
