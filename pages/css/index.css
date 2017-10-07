@@ -33,7 +33,7 @@ body{
 
 	.navbar-default .navbar-nav>li>a{
 		color: #fff;
-		font-family: "Microsoft YaHei";
+		font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
 		font-size: 16px;
 		border-top: 5px solid transparent;
 	}
@@ -42,13 +42,23 @@ body{
 		color: #2b72e0;
 	}
 
+	.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+		background-color: #0c68b7;
+		color: #fff;
+	}
+
+	.dropdown-menu {
+		background-color: #0b68b6;
+		border: 1px solid rgb(11, 104, 181);
+	}
+
+	.dropdown-menu>li>a {
+		color: #fff;
+	}
+
 	.navbar-default.navbar-scroll{
 		background-color: #272727;
 		border-color: #272727;
-	}
-
-	.navbar-scroll.navbar-default .nav li a:hover{
-		color: #2b72e0;
 	}
 
 	.title{
@@ -113,6 +123,7 @@ body{
 }
 
 .product {
+	display: block;
 	cursor: pointer;
 	border: 1px solid #e2e2e2;
 	border-radius: 3px;

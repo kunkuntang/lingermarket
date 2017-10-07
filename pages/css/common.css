@@ -1,13 +1,22 @@
 body{
-	font-family: 'Microsoft YaHei';
+	font-family: 'Microsoft YaHei', "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	margin: 0;
 	padding: 0;
 }
 
-a{
+a,
+a:active,
+a:hover{
 	text-decoration: none;
 	color: #000;
+}
+
+.footer a,
+.footer a:active,
+.footer a:hover{
+	text-decoration: none;
+	color: #fff;
 }
 
 ul,li,ol{

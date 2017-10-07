@@ -1,29 +1,89 @@
-body{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
 .navbar{
     margin: 0;
 }
 
-.company-introduce{
-    height: 600px;
-    background-color: #000;
-    text-align: center;
+.section{
+    color: #fff;
+    width: 100%;
+}
+
+.section:first-child{
+    margin-top: 51px;
+}
+
+.section .cate-con{
+    background-size: cover;
     position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    cursor: pointer;
 }
 
-.company-introduce .title{
-    margin-top: 400px;
-    color: #fff;
-    font-size: 30px;
+.section .cate-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transform: scale(1);
+    -webkit-transition: transform .3s ease-out;
+    transition: transform .3s ease-out;
 }
 
-.company-introduce .introdution{
-    height: 400px;
-    width: 800px;
-    margin: 0 auto;
-    margin-top: 30px;
+.section .cate-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .3);
+    transition: background-color .3s ease-out;
+    -webkit-transition: background-color .3s ease-out;
+    cursor: pointer;
+}
+
+.section .cate-con:hover .cate-img {
+    transform: scale(1.1);    
+}
+
+.section .cate-con:hover .cate-bg{
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.section .cate {
+    position: absolute;
+    top: 50%;
+    line-height: 25px;
+    margin-top: -12.5px;
+    width: 100%;
     text-align: center;
-    color: #fff;
+    font-size: 22px;
+}
+
+.window-support {
+    background: url('/img/production/windowSupport.jpg') center no-repeat;
+}
+
+.handle {
+    background: url('/img/production/handle.jpg') left no-repeat;
+}
+
+.door-closer {
+    background: url('/img/production/doorCloser.jpg') center no-repeat;
+}
+
+.door-handle {
+    background: url('/img/production/doorHandle.jpg') center no-repeat;
+}
+
+.floor-hinge {
+    background: url('/img/production/floorHinge.jpg') center no-repeat;
+}
+
+.door-lock {
+    background: url('/img/production/doorLock.jpg') center no-repeat;
+}
+
+.footer{
+    margin-top: 0;
 }

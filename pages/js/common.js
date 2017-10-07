@@ -1,53 +1,42 @@
-$(document).ready(function () {
+window.initImgArray = function(imgArr, startIdx, endIdx, keepArr) {
+    var i = 0;
+    if (!keepArr) {
+        imgArr = []
+    }
+    for(var i = startIdx; i <= endIdx; i++) {
+        imgArr.push(i)
+    }
+    return imgArr
+}
 
-    (function() {
+window.insertImg = function(parent, imgData, col) {
+    col = col || 4;
+    console.log(imgData)
+    category = window.location.pathname.split('/').pop();
+    if(imgData instanceof Array) {
+        imgData.forEach(function(imgIdx) {
+            var imgDiv =$('<div/>')
+            imgDiv.addClass(category + ' imgCon col-sm-' + col)
+            var img = $('<img/>')
+            img.addClass('img-responsive')
+            img.attr('src', '/img/production/' + category + '/LR-' + imgIdx + '.jpg')
+            imgDiv.append(img)
+            parent.append(imgDiv)
+        })
+    } else {
+        console.error('insertImg must past a array arg')
+    }
+    
+}
 
-        var docElem = document.documentElement,
-            header = document.querySelector( '.navbar-default' ),
-            didScroll = false,
-            changeHeaderOn = 80;
-
-        function init() {
-            window.addEventListener( 'scroll', function( event ) {
-                if( !didScroll ) {
-                    didScroll = true;
-                    setTimeout( scrollPage, 250 );
-                }
-            }, false );
-        }
-
-        function scrollPage() {
-            var sy = scrollY();
-            if ( sy >= changeHeaderOn ) {
-                classie.add( header, 'navbar-scroll' );
-            }
-            else {
-                classie.remove( header, 'navbar-scroll' );
-            }
-            didScroll = false;
-        }
-
-        function scrollY() {
-            return window.pageYOffset || docElem.scrollTop;
-        }
-
-        init();
-
-    })();
-
-    // Highlight the top nav as scrolling
-    $('body').scrollspy({
-        target: '.navbar-fixed-top',
-        offset: 80
+$(function() {
+    $('#production').on('mouseover', function() {
+        $(this).addClass('open');
+        $(this).find('.dropdown-toggle').attr('aria-expanded', 'true')
     })
 
-    // Page scrolling feature
-    $('a.page-scroll').bind('click', function(event) {
-        var link = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $(link.attr('href')).offset().top - 70
-        }, 500);
-        event.preventDefault();
-    });
-
-});
+    $('#production').on('mouseout', function() {
+        $(this).removeClass('open');
+        $(this).find('.dropdown-toggle').attr('aria-expanded', 'false')
+    })
+})
