@@ -30,13 +30,26 @@ window.insertImg = function(parent, imgData, col) {
 }
 
 $(function() {
-    $('#production').on('mouseover', function() {
-        $(this).addClass('open');
-        $(this).find('.dropdown-toggle').attr('aria-expanded', 'true')
-    })
-
-    $('#production').on('mouseout', function() {
-        $(this).removeClass('open');
-        $(this).find('.dropdown-toggle').attr('aria-expanded', 'false')
-    })
+    console.log(IsPC())
+    if (IsPC()) {
+        $('#production').on('mouseover', function() {
+            $(this).addClass('open');
+            $(this).find('.dropdown-toggle').attr('aria-expanded', 'true')
+        })
+    
+        $('#production').on('mouseout', function() {
+            $(this).removeClass('open');
+            $(this).find('.dropdown-toggle').attr('aria-expanded', 'false')
+        })
+    }
 })
+
+function IsPC() {  
+    var userAgentInfo = navigator.userAgent;  
+    var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
+    var flag = true;  
+    for (var v = 0; v < Agents.length; v++) {  
+        if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }  
+    }  
+    return flag;  
+}  

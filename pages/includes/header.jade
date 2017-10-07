@@ -11,10 +11,12 @@ nav.navbar.navbar-default.navbar-fixed-top.le-nav(role="navigation")
         li
           a(href="/") 首页
         li(id="production")
-          a.dropdown-toggle(href='/production', role='button', aria-haspopup='true', aria-expanded='false')
+          a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
             | 产品介绍 
             span.caret
           ul.dropdown-menu
+            li
+              a(href='/production') 全部分类
             li
               a(href='/pro/window_support') 平开滑撑
             li

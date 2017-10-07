@@ -11,7 +11,7 @@ var fs = require('fs')
 //var serveStatic = require('serve-static');
 var favicon = require('serve-favicon');
 var bodyParser = require('body-parser');
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 80;
 var app = express();
 
 app.set('views', './pages/views');
