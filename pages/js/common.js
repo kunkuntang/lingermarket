@@ -11,7 +11,6 @@ window.initImgArray = function(imgArr, startIdx, endIdx, keepArr) {
 
 window.insertImg = function(parent, imgData, col) {
     col = col || 4;
-    console.log(imgData)
     category = window.location.pathname.split('/').pop();
     if(imgData instanceof Array) {
         imgData.forEach(function(imgIdx) {
@@ -30,7 +29,7 @@ window.insertImg = function(parent, imgData, col) {
 }
 
 $(function() {
-    console.log(IsPC())
+    console.log('is pc: ' + IsPC())
     if (IsPC()) {
         $('#production').on('mouseover', function() {
             $(this).addClass('open');
