@@ -27,7 +27,7 @@ app.use('/js', express.static(path.join(__dirname, 'pages/js')));
 //     res.send('')
 // })
 
-app.use(favicon(path.join(__dirname, 'pages/views', 'favicon.ico')))
+app.use(favicon(path.join(__dirname, '/', 'favicon.ico')))
 
 app.listen(port);
 
